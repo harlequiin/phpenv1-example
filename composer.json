@@ -9,6 +9,11 @@
             "email": "maris.udris.lv@gmail.com"
         }
     ],
+    "autoload": {
+      "psr-4": {
+        "Sitepoint\\": "src"
+      }
+    },
     "require": {
         "catfan/medoo": "^1.5"
     },
