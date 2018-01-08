@@ -13,7 +13,7 @@ composer.phar
 /.classpath
 
 #Database files
-*.db
+*.local.db
 
 # Logs
 logs
