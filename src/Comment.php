@@ -9,7 +9,7 @@ class Comment
   protected $comment;
   protected $submissionDate;
 
-  public function __construct(\medoo $medoo)
+  public function __construct(\Medoo\Medoo $medoo)
   {
     $this->database = $medoo;
   }
