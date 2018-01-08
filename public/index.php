@@ -2,14 +2,12 @@
 
 require '../vendor/autoload.php';
 
-echo 'Hello World!';
 
 $database = new Medoo\Medoo([
   'database_type' => 'sqlite',
   'database_file' => '../storage/database.db'
 ]);
 
-dump($database);
 
 ?>
 
@@ -35,7 +33,12 @@ dump($database);
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <form action="post">
+          <label for="name">Name: <input type="text" name="name" placeholder="Your name"></label>
+          <label for="email">Email: <input type="text" name="email" placeholder="Your@email"></label>
+          <label for="comment">Comment: <textarea name="comment" cols="30" rows="10"></textarea></label>
+          <input type="submit" value="Save">
+        </form>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
